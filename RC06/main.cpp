@@ -79,7 +79,7 @@ void* Control(void* param)
 
 			downdgram.Print();
 
-			Sleep(40);
+			Sleep(20);
 		}
 		else if (VehicleController::CtrlState == STATE_SYNC)
 		{
@@ -351,7 +351,13 @@ int main()
 
 void MakeTestData()
 {
-	Carage::GetInstance()->AddCar(0x00A, "10.173.0.12", 8111, 8111);
-	Carage::GetInstance()->AddCar(0x00B, "10.173.0.10", 8113, 8113);
-	//Carage::GetInstance()->AddCar(0x00C, "10.173.0.12", 8112, 8112);
+	//Carage::GetInstance()->AddCar(0x00A, "10.0.2.100", 9111, 9111);
+	//Carage::GetInstance()->AddCar(0x00B, "10.0.1.100", 9112, 9112);
+	//Carage::GetInstance()->AddCar(0x00C, "10.0.4.100", 9113, 9113);
+	//Carage::GetInstance()->AddCar(0x00D, "10.0.3.100", 9114, 9114);
+
+	Carage::GetInstance()->AddCar(0x00A, "10.0.2.100", 9117, 9117);
+	Carage::GetInstance()->AddCar(0x00B, "10.0.4.100", 9113, 9113);
+	Carage::GetInstance()->AddCar(0x00C, "10.0.1.100", 9110, 9110);
+	Carage::GetInstance()->AddCar(0x00D, "10.0.3.100", 9112, 9112);
 }
